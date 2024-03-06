@@ -15,6 +15,7 @@ export const hardSkills = [
   { name: "Typescript", img: "https://img.icons8.com/color/144/typescript.png" },
   { name: "Git", img: "https://img.icons8.com/color/144/git.png" },
   { name: "Github", img: "https://img.icons8.com/color-glass/240/github--v1.png" },
+  { name: "Node JS", img: "https://img.icons8.com/fluency/144/express-js.png" },
   { name: "Express", img: "https://img.icons8.com/fluency/144/express-js.png" },
   { name: "Vercel", img: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" },
   { name: "Figma", img: "https://img.icons8.com/color/144/figma--v1.png" },
