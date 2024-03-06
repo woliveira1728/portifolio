@@ -1,0 +1,26 @@
+.headerContainer {
+    width: 100%;
+    padding: 1.25rem;
+    border-bottom: .0938rem solid var(--color-line-green);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-style: oblique;
+    }
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1rem;
+            font-weight: 400;
+            gap: 1.25rem;
+        }
+    }
+};

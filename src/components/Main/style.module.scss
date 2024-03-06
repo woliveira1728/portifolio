@@ -1,0 +1,123 @@
+.mainContainer {
+    padding: 1.25rem;
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    
+    .aboutSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: .9375rem;
+        border-bottom: .0938rem solid var(--color-line-green);
+
+        .imgProfile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .9375rem;
+            img {
+                width: 18.75rem;
+                border-radius: 100%;
+            }
+            .aboutTitle {
+                font-size: var(--size-title-1);
+                font-weight: 700;
+            }
+        }
+
+        .aboutInfos {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: .625rem;
+
+            
+
+            .summary {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: var(--size-paragraph);
+                font-weight: 300;
+                text-align: justify;
+                line-height: normal;
+            }
+        }
+    }
+
+    .skillsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .9375rem;
+
+        h2 {
+            font-size: var(--size-title-1);
+            font-weight: 700;
+        }
+
+        .skillsContent {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-block: 1.25rem;
+            .skillsContainer {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+                .hardSkills{
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        text-align: center;
+                        font-size: 1.375rem;
+                        font-weight: 600;
+                        font-style: oblique;
+                    }
+                    .cardSkillsContainer {
+                        // width: 40%;
+                        display: grid;
+                        grid-template-columns: 90px 90px 90px;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 1.25rem;
+                        flex-wrap: wrap;
+                        gap: 1.875rem;
+            
+                        
+                        .skillsCard {
+                            width: 6.875rem;
+                            height: 8.4375rem;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 1rem;
+                            gap: 1rem;
+                            border-radius: var(--radius-default);
+                            border: .0938rem solid var(--color-line-green);
+                            &:hover{
+                                background: hsla(135, 75%, 50%, 0.199);
+                            }
+                            span {
+                                text-align: center;
+                                font-size: var(--size-headline-bold);
+                            }
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+}

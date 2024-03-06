@@ -1,0 +1,35 @@
+@import url("./reset.scss");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+
+    --font--family-primary: "Roboto", sans-serif;
+
+    --color-line-green: #21e051;
+
+    --size-title-1: 38px;
+    --size-title-2: 1rem;
+    --size-headline: .75rem;
+    --size-headline-bold: .75rem;
+    --size-paragraph: .875rem;
+
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    --radius-default: .5rem;
+};
+
+body {
+    width: 100vw;
+    max-width: 109.375rem;
+    
+    background: #121214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font--family-primary);
+    position: relative;
+
+    color: #FFFFFF;
+};
