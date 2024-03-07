@@ -7,10 +7,9 @@ export const Header = () => {
             <h2>PORTIFÓLIO</h2>
             <nav>
                 <ul>
-                    <li><a href="#banner">Início</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certificates">Certificados</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
                 </ul>
             </nav>
         </header>

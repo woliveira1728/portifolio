@@ -1,16 +1,22 @@
 .mainContainer {
-    padding: 1.25rem;
-    margin-top: 3.75rem;
+    width: 100%;
+    margin-top: 4.375rem;
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
-    
-    .aboutSection {
-        display: flex;
+    @media (max-width: 768) {
         align-items: center;
-        justify-content: space-between;
-        padding-bottom: .9375rem;
-        border-bottom: .0938rem solid var(--color-line-green);
+        justify-content: center;
+    }
+    .aboutSection {
+        display: grid;
+        align-items: center;
+        padding-block: 3.75rem;
+        flex-wrap: wrap;
+        gap: 3.125rem;
+        
+        @media (min-width: 769px) {
+            grid-template-columns: 45% 45%;
+        }
 
         .imgProfile {
             display: flex;
@@ -19,35 +25,31 @@
             justify-content: center;
             gap: .9375rem;
             img {
-                width: 18.75rem;
+                width: clamp(12.5rem, 10.4167rem + 9.2593vw, 18.75rem);
                 border-radius: 100%;
             }
             .aboutTitle {
-                font-size: var(--size-title-1);
+                font-size: clamp(var(--size-title-1), 0.5417rem + 2.0370vw, var(--size-title-2));
                 font-weight: 700;
             }
         }
 
         .aboutInfos {
-            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
             gap: .625rem;
 
-            
-
-            .summary {
-                font-size: 1rem;
-                font-weight: 400;
-            }
-
             p {
-                font-size: var(--size-paragraph);
+                font-size: clamp(0.813rem, 0.7507rem + 0.2770vw, var(--size-paragraph));
                 font-weight: 300;
                 text-align: justify;
                 line-height: normal;
+                padding-inline: .9375rem;
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
             }
         }
     }
@@ -57,11 +59,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-block: 3.75rem;
+        border-block: .0938rem solid var(--color-line-green);
         gap: .9375rem;
 
         h2 {
             font-size: var(--size-title-1);
             font-weight: 700;
+            text-align: center;
+            margin-bottom: 3.125rem;
         }
 
         .skillsContent {
@@ -69,12 +75,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-block: 1.25rem;
             .skillsContainer {
                 width: 100%;
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 30px;
                 .hardSkills{
                     display: flex;
                     flex-direction: column;
@@ -85,15 +92,14 @@
                         font-style: oblique;
                     }
                     .cardSkillsContainer {
-                        // width: 40%;
                         display: grid;
-                        grid-template-columns: 90px 90px 90px;
+                        grid-template-columns: 5.625rem 5.625rem 5.625rem;
                         align-items: center;
                         justify-content: space-between;
                         padding: 1.25rem;
                         flex-wrap: wrap;
                         gap: 1.875rem;
-            
+                        
                         
                         .skillsCard {
                             width: 6.875rem;
@@ -107,7 +113,11 @@
                             border-radius: var(--radius-default);
                             border: .0938rem solid var(--color-line-green);
                             &:hover{
+                                transition: ease-in-out .5s;
                                 background: hsla(135, 75%, 50%, 0.199);
+                            }
+                            img:hover{
+                                transform: scale(1.1);
                             }
                             span {
                                 text-align: center;

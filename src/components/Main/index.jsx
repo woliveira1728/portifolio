@@ -7,19 +7,12 @@ export const Main = () => {
     return (
         <main className={styles.mainContainer}>
             
-            <section id="banner">
-
-            </section>
-            
             <section id="about" className={styles.aboutSection}>
                 <div className={styles.imgProfile}>
                     <img src={perfil} alt="Foto de perfil" />
                     <h1 className={styles.aboutTitle}>Wilson Oliveira</h1>
                 </div>
                 <div className={styles.aboutInfos}>
-                    <p>
-                        Olá a todos,
-                    </p>
                     <p>
                         Meu interesse pela tecnologia começou cedo, quando passei anos dando manutenção em computadores. No entanto, foi durante esse tempo que descobri minha verdadeira paixão: escrever código para resolver problemas em sistemas. Decidi então fazer a transição de carreira e me dedicar integralmente ao desenvolvimento de software.
                     </p>
