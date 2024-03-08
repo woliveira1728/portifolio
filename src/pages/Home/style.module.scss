@@ -1,0 +1,197 @@
+.aboutSection {
+    display: grid;
+    align-items: center;
+    padding-block: 3.75rem;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    
+    @media (min-width: 769px) {
+        grid-template-columns: 45% 45%;
+    }
+
+    .imgProfile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .9375rem;
+        img {
+            width: clamp(12.5rem, 10.4167rem + 9.2593vw, 18.75rem);
+            border-radius: 100%;
+        }
+        .aboutTitle {
+            font-size: clamp(var(--size-title-1), 0.5417rem + 2.0370vw, var(--size-title-2));
+            font-weight: 700;
+        }
+    }
+
+    .aboutInfos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: .625rem;
+
+        p {
+            font-size: clamp(0.813rem, 0.7507rem + 0.2770vw, var(--size-paragraph));
+            font-weight: 300;
+            text-align: justify;
+            line-height: normal;
+            padding-inline: .9375rem;
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3.75rem;
+    border-block: .0938rem solid var(--color-line-green);
+    gap: .9375rem;
+
+    h2 {
+        font-size: var(--size-title-1);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3.125rem;
+    }
+
+    .skillsContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .skillsContainer {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.875rem;
+            .hardSkills{
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    text-align: center;
+                    font-size: 1.375rem;
+                    font-weight: 600;
+                    font-style: oblique;
+                }
+                .cardSkillsContainer {
+                    display: grid;
+                    grid-template-columns: 5.625rem 5.625rem 5.625rem;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1.25rem;
+                    flex-wrap: wrap;
+                    gap: clamp(0.938rem, 0.6257rem + 1.3881vw, 1.875rem);                    
+                    
+                    .skillsCard {
+                        width: clamp(6.25rem, 6.0417rem + 0.9259vw, 6.875rem);
+                        height: 8.4375rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1rem;
+                        gap: 1rem;
+                        border-radius: var(--radius-default);
+                        border: .0938rem solid var(--color-line-green);
+                        &:hover{
+                            transition: ease-in-out .5s;
+                            background: hsla(135, 75%, 50%, 0.199);
+                        }
+                        img:hover{
+                            transform: scale(1.1);
+                        }
+                        span {
+                            text-align: center;
+                            font-size: var(--size-headline-bold);
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+.projectsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 6.25rem;
+    gap: .9375rem;
+
+    h2 {
+        font-size: var(--size-title-1);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3.125rem;
+    }
+
+    .cardProjectsContainer {
+        width: 100%;
+        @media (min-width: 901px) {
+            display: grid;
+            grid-template-columns: 15.625rem 15.625rem 15.625rem;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            gap: 3.125rem;
+        }
+        
+        @media (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cardProject {
+            width: 15.625rem;
+            height: 20.625rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: var(--radius-default);
+            padding: .625rem;
+            margin: .625rem;
+            gap: .9375rem;
+            border: .0625rem solid #27272b;
+            background: #27272b;
+            color: azure;
+            &:hover {
+                transition: ease .7s;
+                background: hsla(135, 75%, 50%, 0.199);
+                border: 1px solid hsla(135, 75%, 50%, 0.199);
+            }
+
+            iframe {
+                border-radius: var(--radius-default);
+            }
+
+            a {
+                font-size: var(--size-paragraph);
+                font-weight: 600;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                font-size: .75rem;
+                font-weight: 300;
+                text-align: justify;
+                line-height: 1.125rem;
+            }
+        }
+    }
+}

@@ -2,10 +2,10 @@ import styles from "./style.module.scss";
 import perfil from "../../assets/perfil.png";
 import { hardSkills, softSkills, projects } from "../../data/skills";
 
-export const Main = () => {
+export const Home = () => {
 
     return (
-        <main className={styles.mainContainer}>
+        <>
             
             <section id="about" className={styles.aboutSection}>
                 <div className={styles.imgProfile}>
@@ -89,6 +89,6 @@ export const Main = () => {
                     })}
                 </ul>
             </section>
-        </main>
+        </>
     )
 };
