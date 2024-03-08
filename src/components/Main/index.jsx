@@ -66,6 +66,7 @@ export const Main = () => {
             </section>
 
             <section id="projects" className={styles.projectsSection}>
+                <h2>Projetos</h2>
                 <ul className={styles.cardProjectsContainer}>
                     {projects.map(project => {
                         return (

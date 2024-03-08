@@ -7,6 +7,9 @@ import selfLearning from "../assets/self-learning.png";
 import timeManagement from "../assets/time-management.png";
 import openMusic from "../assets/videos/open-music.mp4";
 import institutionalWebsite from "../assets/videos/Institutional-Website.mp4";
+import genericPortifolio from "../assets/videos/Generic-Portifolio.mp4";
+import burguerKenzie from "../assets/videos/Burguer-Kenzie.mp4";
+import kenzieHub from "../assets/videos/Kenzie-Hub.mp4";
 
 export const hardSkills = [
   { name: "HTML5", img: "https://img.icons8.com/color/144/html-5--v1.png" },
@@ -36,44 +39,38 @@ export const softSkills = [
 
 export const projects = [
   { 
-    media: institutionalWebsite,
-    name: "Generic Institutional Website",
-    description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-open-music-template-woliveira1728/"
+    media: kenzieHub,
+    name: "Kenzie Hub",
+    description: "Frontend Developed in ReactJS for certification at Kenzie Academy Brasil, with implementation of CRUD, Hooks Form, Router Dom, autologin, Route porting, useContext, contextAPI, Axios, Componentization, useState, Zod.",
+    href: "https://react-entrega-kenzie-hub-woliveira1728-1r9cqp3c5.vercel.app/"
+  },
+
+  {
+    media: burguerKenzie,
+    name: "Burguer Kenzie",
+    description: "Burger restaurant project developed in React to apply the concepts of SASS, Figma layout fidelity, responsiveness, Modal, localStorage, Good practices and Product listing.",
+    href: "https://react-entrega-s3-template-hamburgueria-woliveira1728-lorm3aqfl.vercel.app/"
+  },
+
+  { 
+    media: genericPortifolio,
+    name: "Generic Portfolio",
+    description: "Generic portfolio developed to apply knowledge in React, Figma Layout, Componentization and Good Practices.",
+    href: "https://m3-s1-entrega-portfolio-template-woliveira1728-3p405rkt6.vercel.app/"
   },
 
   {
     media: openMusic,
     name: "Open Music",
-    description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
+    description: "Project developed in HTML5, CSS3 and Javascript to implement DarkMode concepts, modules, methods, animation and commits.",
+    href: "https://kenzie-academy-brasil-developers.github.io/m2-open-music-template-woliveira1728/"
   },
 
   { 
     media: institutionalWebsite,
     name: "Generic Institutional Website",
     description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-open-music-template-woliveira1728/"
-  },
-  
-  {
-    media: openMusic,
-    name: "Open Music",
-    description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
     href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
   },
-
-  { 
-    media: institutionalWebsite,
-    name: "Generic Institutional Website",
-    description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-open-music-template-woliveira1728/"
-  },
   
-  {
-    media: openMusic,
-    name: "Open Music",
-    description: "Institutional website project developed to apply knowledge of HTML5 and CSS3 including responsiveness between desktop and mobile.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
-  },
 ];
