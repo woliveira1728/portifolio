@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import perfil from "../../assets/perfil.png";
-import { hardSkills, softSkills } from "../../data/skills";
+import { hardSkills, softSkills, projects } from "../../data/skills";
 
 export const Main = () => {
 
@@ -65,8 +65,28 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id="certificates">
-
+            <section id="projects" className={styles.projectsSection}>
+                <ul className={styles.cardProjectsContainer}>
+                    {projects.map(project => {
+                        return (
+                            <li className={styles.cardProject}>
+                                <iframe
+                                    width="100%"
+                                    src={project.media}
+                                    frameborder="0"
+                                >
+                                </iframe>
+                                <a
+                                    href={project.href}
+                                    target="_blank"
+                                >
+                                    {project.name}
+                                </a>
+                                <p>{project.description}</p>
+                            </li>
+                        )
+                    })}
+                </ul>
             </section>
         </main>
     )
