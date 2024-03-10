@@ -1,6 +1,7 @@
 .headerContainer {
     width: 100%;
-    padding: 1.25rem;
+    padding-block: 1.25rem;
+    padding-inline: 1.25rem;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -14,6 +15,18 @@
         font-weight: 800;
         font-style: oblique;
     }
+    
+    .buttonMenu {
+        color: #FFFFFF;
+        &:hover {
+            transition: ease .7s;
+            color: var(--color-line-green);
+        }
+        @media (min-width: 769px) {
+            display: none;
+        }
+    }
+    
     nav {
         ul {
             display: flex;
@@ -23,6 +36,13 @@
             font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
             font-weight: 400;
             gap: clamp(0.313rem, 0.0007rem + 1.3881vw, 1.25rem);
+            li > a:hover {
+                transition: ease .7s;
+                color: var(--color-line-green);
+            }
+        }
+        @media (max-width: 768px) {
+            display: none;
         }
     }
 };

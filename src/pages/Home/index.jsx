@@ -1,8 +1,9 @@
 import styles from "./style.module.scss";
 import perfil from "../../assets/perfil.png";
 import { hardSkills, softSkills, projects, certificates } from "../../data/data";
+import { MenuMobileModal } from "../../components/MenuMobileModal";
 
-export const Home = () => {
+export const Home = ({ showModal, setShowModal }) => {
 
     return (
         <>
@@ -109,6 +110,8 @@ export const Home = () => {
                     })}
                 </ul>
             </section>
+
+            {showModal ? <MenuMobileModal setShowModal={setShowModal} /> : null}
         </>
     )
 };

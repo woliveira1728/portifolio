@@ -25,7 +25,7 @@ export const Footer = () => {
                 </ul>
                 <span>woliveira1728@gmail.com</span>
             </div>
-            <p>Copyright to Wilson Oliveira</p>
+            <p>Developed by Wilson Oliveira</p>
         </footer>
     )
 };
