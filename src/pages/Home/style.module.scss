@@ -67,13 +67,19 @@
         align-items: center;
         justify-content: center;
         .skillsContainer {
-            width: 100%;
             display: flex;
             align-items: flex-start;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
             gap: 1.875rem;
-            .hardSkills{
+            @media (min-width: 901px) {
+                width: 78%;
+            }
+            @media (max-width: 900px) {
+                justify-content: center;
+            }
+
+            .skills{
                 display: flex;
                 flex-direction: column;
                 h3 {
@@ -81,15 +87,15 @@
                     font-size: 1.375rem;
                     font-weight: 600;
                     font-style: oblique;
+                    margin-bottom: 1.25rem;
                 }
                 .cardSkillsContainer {
                     display: grid;
                     grid-template-columns: 5.625rem 5.625rem 5.625rem;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 1.25rem;
                     flex-wrap: wrap;
-                    gap: clamp(0.938rem, 0.6257rem + 1.3881vw, 1.875rem);                    
+                    gap: clamp(0.938rem, 0.6257rem + 1.3881vw, 1.875rem);
                     
                     .skillsCard {
                         width: clamp(6.25rem, 6.0417rem + 0.9259vw, 6.875rem);
@@ -122,7 +128,6 @@
 }
 
 .projectsSection {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,13 +143,12 @@
     }
 
     .cardProjectsContainer {
-        width: 100%;
         @media (min-width: 901px) {
+            width: 80%;
             display: grid;
-            grid-template-columns: 15.625rem 15.625rem 15.625rem;
+            grid-template-columns: 18.75rem 18.75rem 18.75rem;
             align-items: flex-start;
-            justify-content: space-evenly;
-            gap: 3.125rem;
+            justify-content: space-between;
         }
         
         @media (max-width: 900px) {
@@ -156,7 +160,7 @@
         }
 
         .cardProject {
-            width: 15.625rem;
+            width: 18.75rem;
             height: 20.625rem;
             display: flex;
             flex-direction: column;
@@ -179,6 +183,82 @@
             }
 
             a {
+                font-size: var(--size-paragraph);
+                font-weight: 600;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                font-size: .75rem;
+                font-weight: 300;
+                text-align: justify;
+                line-height: 1.125rem;
+            }
+        }
+    }
+}
+
+.certificatesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 6.25rem;
+    gap: .9375rem;
+    border-block: .0938rem solid var(--color-line-green);
+
+    h2 {
+        font-size: var(--size-title-1);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3.125rem;
+    }
+
+    .cardCertificatesContainer {
+        @media (min-width: 901px) {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 18.75rem 18.75rem 18.75rem;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        @media (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cardCertificates {
+            width: 18.75rem;
+            height: 20.625rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: var(--radius-default);
+            padding: .625rem;
+            margin: .625rem;
+            gap: .9375rem;
+            border: .0625rem solid #27272b;
+            background: #27272b;
+            color: azure;
+            &:hover {
+                transition: ease .7s;
+                background: hsla(135, 75%, 50%, 0.199);
+                border: 1px solid hsla(135, 75%, 50%, 0.199);
+            }
+
+            img {
+                width: 100%;
+                border-radius: var(--radius-default);
+            }
+
+            a {
+                text-align: center;
                 font-size: var(--size-paragraph);
                 font-weight: 600;
                 &:hover {

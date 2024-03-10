@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import perfil from "../../assets/perfil.png";
-import { hardSkills, softSkills, projects } from "../../data/skills";
+import { hardSkills, softSkills, projects, certificates } from "../../data/data";
 
 export const Home = () => {
 
@@ -34,7 +34,7 @@ export const Home = () => {
 
                 <div className={styles.skillsContent}>
                     <div className={styles.skillsContainer}>
-                        <div className={styles.hardSkills}>
+                        <div className={styles.skills}>
                             <h3>HardSkills</h3>
                             <ul className={styles.cardSkillsContainer}>
                                 {hardSkills.map(hardSkill => {
@@ -48,7 +48,7 @@ export const Home = () => {
                             </ul>
                         </div>
 
-                        <div className={styles.hardSkills}>
+                        <div className={styles.skills}>
                             <h3>SoftSkills</h3>
                             <ul className={styles.cardSkillsContainer}>
                                 {softSkills.map(hardSkill => {
@@ -84,6 +84,26 @@ export const Home = () => {
                                     {project.name}
                                 </a>
                                 <p>{project.description}</p>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </section>
+
+            <section id="certificates" className={styles.certificatesSection}>
+                <h2>Certificates</h2>
+                <ul className={styles.cardCertificatesContainer}>
+                    {certificates.map(certificate => {
+                        return (
+                            <li className={styles.cardCertificates}>
+                                <img src={certificate.certificateImg} alt="" />
+                                <a
+                                    href={certificate.href}
+                                    target="_blank"
+                                >
+                                    {certificate.name}
+                                </a>
+                                <p>{certificate.description}</p>
                             </li>
                         )
                     })}
