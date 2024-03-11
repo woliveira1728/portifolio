@@ -38,9 +38,9 @@ export const Home = ({ showModal, setShowModal }) => {
                         <div className={styles.skills}>
                             <h3>HardSkills</h3>
                             <ul className={styles.cardSkillsContainer}>
-                                {hardSkills.map(hardSkill => {
+                                {hardSkills.map((hardSkill, index) => {
                                     return (
-                                        <li key={hardSkill.name} className={styles.skillsCard}>
+                                        <li key={index} className={styles.skillsCard}>
                                             <img width="80" src={hardSkill.img} alt={hardSkill.name} />
                                             <span>{hardSkill.name}</span>
                                         </li>
@@ -52,9 +52,9 @@ export const Home = ({ showModal, setShowModal }) => {
                         <div className={styles.skills}>
                             <h3>SoftSkills</h3>
                             <ul className={styles.cardSkillsContainer}>
-                                {softSkills.map(hardSkill => {
+                                {softSkills.map((hardSkill, index) => {
                                     return (
-                                        <li  key={hardSkill.name} className={styles.skillsCard}>
+                                        <li  key={index} className={styles.skillsCard}>
                                             <img width="80" src={hardSkill.img} alt={hardSkill.name} />
                                             <span>{hardSkill.name}</span>
                                         </li>
@@ -69,9 +69,9 @@ export const Home = ({ showModal, setShowModal }) => {
             <section id="projects" className={styles.projectsSection}>
                 <h2>Projetos</h2>
                 <ul className={styles.cardProjectsContainer}>
-                    {projects.map(project => {
+                    {projects.map((project, index) => {
                         return (
-                            <li className={styles.cardProject}>
+                            <li key={index} className={styles.cardProject}>
                                 <iframe
                                     width="100%"
                                     src={project.media}
@@ -94,9 +94,9 @@ export const Home = ({ showModal, setShowModal }) => {
             <section id="certificates" className={styles.certificatesSection}>
                 <h2>Certificates</h2>
                 <ul className={styles.cardCertificatesContainer}>
-                    {certificates.map(certificate => {
+                    {certificates.map((certificate, index) => {
                         return (
-                            <li className={styles.cardCertificates}>
+                            <li key={index} className={styles.cardCertificates}>
                                 <img src={certificate.certificateImg} alt="" />
                                 <a
                                     href={certificate.href}
