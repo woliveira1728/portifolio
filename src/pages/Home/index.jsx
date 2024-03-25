@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import perfil from "../../assets/perfil.png";
+import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 import { hardSkills, softSkills, projects, certificates } from "../../data/data";
 import { MenuMobileModal } from "../../components/MenuMobileModal";
 
@@ -12,6 +13,26 @@ export const Home = ({ showModal, setShowModal }) => {
                 <div className={styles.imgProfile}>
                     <img src={perfil} alt="Foto de perfil" />
                     <h1 className={styles.aboutTitle}>Wilson Oliveira</h1>
+                    <div className={styles.contactsContainer}>
+                        <ul>
+                            <li>
+                                <a href="https://wa.me/5592994763359" target="_blank">
+                                    <FaWhatsapp />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/woliveira1728" target="_blank">
+                                    <FaGithub />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/woliveira1728/" target="_blank">
+                                    <FaLinkedin />
+                                </a>
+                            </li>
+                        </ul>
+                        <span>woliveira1728@gmail.com</span>
+                    </div>
                 </div>
                 <div className={styles.aboutInfos}>
                     <p>

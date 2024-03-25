@@ -110,24 +110,24 @@ export const certificates = [
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQFCd10g8YG6WA/profile-treasury-image-shrink_800_800/0/1707584013739?e=1710698400&v=beta&t=7EO-blugyzUspg1bgtT-V7wtpN1Emy-v3NsQbVcnkgw",
+    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQFCd10g8YG6WA/profile-treasury-image-shrink_800_800/0/1707584013739?e=1711947600&v=beta&t=k7alAOr2Q3JuNw07ssrXXuOSSyOukNBv5dBNwQWgv90",
     name: "Soft Skills - Nível 3",
     description: "Certificate of participation in the 30 hour/class training at level 3 of Soft Skills promoted by Kenzie Academy Brasil. Skills: building new habits, protagonism, teamwork and crisis management.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
+    href: "#"
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQE9fi4Ug82Srg/profile-treasury-image-shrink_800_800/0/1701439837594?e=1710698400&v=beta&t=YfhX2aecU70jFDfOVZwyvMPNZK8_SAKsUMQ-BN-IknY",
+    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQE9fi4Ug82Srg/profile-treasury-image-shrink_800_800/0/1701439837594?e=1711947600&v=beta&t=6prrXCCmlU5CC8xBhyIoSch0p0mO7NHchnpYnTfv88s",
     name: "Soft Skills - Nível 2",
     description: "During this Level, I was able to develop a self-assessment of my habits, evolve in my learning process, develop prioritization skills, needs analysis and worked intensively on my communication.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
+    href: "#"
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQGB4315ytAzFA/profile-treasury-image-shrink_800_800/0/1701439632244?e=1710698400&v=beta&t=x93H6Q0u8ayaCuyp5ono6v3QbtlkDDr0FvvaOfgYBGI",
+    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQGB4315ytAzFA/profile-treasury-image-shrink_800_800/0/1701439632244?e=1711947600&v=beta&t=M3jxohtVjEBdi3J0XxM2nxNivdKm28Cf_Hm0JjLxjPM",
     name: "Soft Skills - Nível 1",
     description: "During this Level 1 I was able to develop my self-knowledge, autonomous learning and time management, skills that are so essential for my career as a Dev.",
-    href: "https://kenzie-academy-brasil-developers.github.io/m2-site-instituciona-generico-woliveira1728/"
+    href: "#"
   },
 
 ];
