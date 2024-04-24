@@ -11,6 +11,10 @@ import genericPortifolio from "../assets/videos/Generic-Portifolio.mp4";
 import burguerKenzie from "../assets/videos/Burguer-Kenzie.mp4";
 import kenzieHub from "../assets/videos/Kenzie-Hub.mp4";
 import matrizTrading from "../assets/videos/matriz-trading-school.mp4";
+import frontEnd from "../assets/certificates/front-end.png";
+import softSkills1 from "../assets/certificates/soft-skills-1.jpeg";
+import softSkills2 from "../assets/certificates/soft-skills-2.jpeg";
+import softSkills3 from "../assets/certificates/soft-skills-3.jpeg";
 
 
 export const hardSkills = [
@@ -28,6 +32,7 @@ export const hardSkills = [
   { name: "Figma", img: "https://img.icons8.com/color/144/figma--v1.png" },
   { name: "Solidity", img: "https://img.icons8.com/color/144/solidity.png" },
   { name: "PostgreSQL", img: "https://img.icons8.com/plasticine/100/postgreesql.png" },
+  { name: "Prisma ORM", img: "https://img.icons8.com/color/144/prisma-orm.png" },
 ];
 
 export const softSkills = [
@@ -89,8 +94,8 @@ export const projects = [
 export const certificates = [
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D22AQH1Dt5PSZ3sjw/feedshare-shrink_1280/0/1706302550837?e=1712793600&v=beta&t=F99zf9zDuQdPS3K6vF4_DMkt0aM4XeIoFxVeBzMHEUY",
-    name: "Fron End Programming",
+    certificateImg: frontEnd,
+    name: "Front End Programming",
     description: "Certificate of completion for 1000 class/hours in Front End ProgrammingFront End Programming covering HTML, CSS, React.js and Typescript.",
     href: "https://kenzie.com.br/certificados/84c145d8-400f-462a-8756-a9895f0fcd4b"
   },
@@ -110,21 +115,21 @@ export const certificates = [
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQFCd10g8YG6WA/profile-treasury-image-shrink_800_800/0/1707584013739?e=1711947600&v=beta&t=k7alAOr2Q3JuNw07ssrXXuOSSyOukNBv5dBNwQWgv90",
+    certificateImg: softSkills3,
     name: "Soft Skills - Nível 3",
     description: "Certificate of participation in the 30 hour/class training at level 3 of Soft Skills promoted by Kenzie Academy Brasil. Skills: building new habits, protagonism, teamwork and crisis management.",
     href: "#"
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQE9fi4Ug82Srg/profile-treasury-image-shrink_800_800/0/1701439837594?e=1711947600&v=beta&t=6prrXCCmlU5CC8xBhyIoSch0p0mO7NHchnpYnTfv88s",
+    certificateImg: softSkills2,
     name: "Soft Skills - Nível 2",
     description: "During this Level, I was able to develop a self-assessment of my habits, evolve in my learning process, develop prioritization skills, needs analysis and worked intensively on my communication.",
     href: "#"
   },
 
   {
-    certificateImg: "https://media.licdn.com/dms/image/D4D2DAQGB4315ytAzFA/profile-treasury-image-shrink_800_800/0/1701439632244?e=1711947600&v=beta&t=M3jxohtVjEBdi3J0XxM2nxNivdKm28Cf_Hm0JjLxjPM",
+    certificateImg: softSkills1,
     name: "Soft Skills - Nível 1",
     description: "During this Level 1 I was able to develop my self-knowledge, autonomous learning and time management, skills that are so essential for my career as a Dev.",
     href: "#"
