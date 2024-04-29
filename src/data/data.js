@@ -33,6 +33,7 @@ export const hardSkills = [
   { name: "Solidity", img: "https://img.icons8.com/color/144/solidity.png" },
   { name: "PostgreSQL", img: "https://img.icons8.com/plasticine/100/postgreesql.png" },
   { name: "Prisma ORM", img: "https://img.icons8.com/color/144/prisma-orm.png" },
+  { name: "Jest", img: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" },
 ];
 
 export const softSkills = [
