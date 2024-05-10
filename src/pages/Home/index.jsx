@@ -36,16 +36,19 @@ export const Home = ({ showModal, setShowModal }) => {
                 </div>
                 <div className={styles.aboutInfos}>
                     <p>
-                        Meu interesse pela tecnologia começou cedo, quando passei anos dando manutenção em computadores. No entanto, foi durante esse tempo que descobri minha verdadeira paixão: escrever código para resolver problemas em sistemas. Decidi então fazer a transição de carreira e me dedicar integralmente ao desenvolvimento de software.
+                        My interest in technology began early, in mid-2005, when I spent years maintaining computers. However, it was during this time that I discovered my true passion: writing code to solve problems in systems. I then decided to make a career transition and dedicate myself fully to development.
                     </p>
                     <p>
-                        Essa decisão me levou à Kenzie Academy Brasil, onde tive a oportunidade de me aprofundar no mundo do desenvolvimento web fullstack. Durante meu tempo lá, mergulhei de cabeça em linguagens e tecnologias como HTML5, SASS, JavaScript, TypeScript e ReactJS. Além disso, adquiri softskills essenciais para o sucesso na área, como autoconhecimento, aprendizado autônomo, trabalho em equipe e gestão de crises.
+                        This decision led me to Kenzie Academy Brasil, where I had the opportunity to delve deeper into the world of fullstack web development. During my time there, I dove headfirst into languages ​​and technologies like HTML5, SASS, JavaScript, TypeScript, and ReactJS. Furthermore, I acquired softskills essential for success in the field, such as self-knowledge, autonomous learning, teamwork and crisis management.
                     </p>
                     <p>
-                        Estou orgulhoso de ter concluído o curso com sucesso e obtido meu certificado de formação frontend. No entanto, minha jornada de aprendizado está longe de terminar. Atualmente, estou focado em expandir meus conhecimentos para o desenvolvimento backend. Estou me dedicando ao estudo de novas tecnologias e frameworks que me permitirão ampliar minhas habilidades e contribuir de forma ainda mais significativa para projetos desafiadores.
+                        I am proud to have successfully completed the course and obtained my frontend training certificate. However, my learning journey is far from over. Currently, I'm focused on expanding my knowledge into backend development. I developed solid skills in creating APIs using Prisma, and I have intermediate knowledge in Java, which allows me to contribute to more complex and robust projects.
                     </p>
                     <p>
-                        Estou animado com as possibilidades que o futuro reserva e comprometido em continuar aprendendo, crescendo e me tornando um desenvolvedor de software ainda melhor.
+                        Furthermore, I am diving into the world of blockchain, expanding my knowledge in technologies such as Solidity and Scrypt. I am excited about the opportunities this field offers and am committed to becoming proficient in this emerging area.
+                    </p>
+                    <p>
+                        I'm excited about the possibilities the future holds and committed to continuing to learn, grow, and become an even better developer.
                     </p>
                 </div>
             </section>
