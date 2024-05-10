@@ -52,7 +52,7 @@ export const Home = ({ showModal, setShowModal }) => {
 
             <section id="skills" className={styles.skillsSection}>
 
-                <h2>Tecnologias e Habilidades</h2>
+                <h2>Technologies and Skills</h2>
 
                 <div className={styles.skillsContent}>
                     <div className={styles.skillsContainer}>
@@ -88,7 +88,7 @@ export const Home = ({ showModal, setShowModal }) => {
             </section>
 
             <section id="projects" className={styles.projectsSection}>
-                <h2>Projetos</h2>
+                <h2>Projects</h2>
                 <ul className={styles.cardProjectsContainer}>
                     {projects.map((project, index) => {
                         return (

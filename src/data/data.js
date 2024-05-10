@@ -15,6 +15,7 @@ import frontEnd from "../assets/certificates/front-end.png";
 import softSkills1 from "../assets/certificates/soft-skills-1.jpeg";
 import softSkills2 from "../assets/certificates/soft-skills-2.jpeg";
 import softSkills3 from "../assets/certificates/soft-skills-3.jpeg";
+import carCatalogApi from "../assets/videos/car-catalog-api.mp4";
 
 
 export const hardSkills = [
@@ -34,6 +35,7 @@ export const hardSkills = [
   { name: "PostgreSQL", img: "https://img.icons8.com/plasticine/100/postgreesql.png" },
   { name: "Prisma ORM", img: "https://img.icons8.com/color/144/prisma-orm.png" },
   { name: "Jest", img: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" },
+  { name: "Swagger", img: "https://img.icons8.com/color/144/cloud-function.png" },
 ];
 
 export const softSkills = [
@@ -47,6 +49,13 @@ export const softSkills = [
 ];
 
 export const projects = [
+
+  {
+    media: carCatalogApi,
+    name: "Car Catalog API",
+    description: "A car catalog API using prisma, bcrypt, dotenv, express, helmet, jsonwebtoken, morgan, tsyringe, zod technologies. Tests run in jest and supertest. Documented in swagger and markdown.",
+    href: "https://github.com/woliveira1728/car-catalog-api"
+  },
 
   {
     media: matrizTrading,
