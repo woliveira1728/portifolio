@@ -15,6 +15,7 @@ import frontEnd from "../assets/certificates/front-end.png";
 import softSkills1 from "../assets/certificates/soft-skills-1.jpeg";
 import softSkills2 from "../assets/certificates/soft-skills-2.jpeg";
 import softSkills3 from "../assets/certificates/soft-skills-3.jpeg";
+import fullStack from "../assets/certificates/full-stack.jpeg";
 import carCatalogApi from "../assets/videos/car-catalog-api.mp4";
 
 
@@ -102,6 +103,13 @@ export const projects = [
 ];
 
 export const certificates = [
+
+  {
+    certificateImg: fullStack,
+    name: "Full Stack Programming",
+    description: "2000-hour Full Stack Development course that covers Front End and Back End technologies in addition to Soft Skills necessary for the job market.",
+    href: "https://www.kenzie.com.br/certificados/23028057-d317-4722-9889-faffb2b10093"
+  },
 
   {
     certificateImg: frontEnd,
