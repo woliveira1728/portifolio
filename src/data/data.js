@@ -37,6 +37,7 @@ export const hardSkills = [
   { name: "Prisma ORM", img: "https://img.icons8.com/color/144/prisma-orm.png" },
   { name: "Jest", img: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" },
   { name: "Swagger", img: "https://img.icons8.com/color/144/cloud-function.png" },
+  { name: "Java", img: "https://img.icons8.com/?size=100&id=GPfHz0SM85FX&format=png&color=000000" },
 ];
 
 export const softSkills = [
