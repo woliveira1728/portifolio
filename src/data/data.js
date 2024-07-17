@@ -17,6 +17,10 @@ import softSkills2 from "../assets/certificates/soft-skills-2.jpeg";
 import softSkills3 from "../assets/certificates/soft-skills-3.jpeg";
 import fullStack from "../assets/certificates/full-stack.jpeg";
 import carCatalogApi from "../assets/videos/car-catalog-api.mp4";
+import santander from "../assets/certificates/santander.png";
+import aluraJava from "../assets/certificates/alura-java.png";
+import dioBlockchain from "../assets/certificates/dio-blockchain.png";
+import courseMarketplace from "../assets/certificates/course-marketplace.png";
 
 
 export const hardSkills = [
@@ -51,6 +55,13 @@ export const softSkills = [
 ];
 
 export const projects = [
+
+  {
+    media: carCatalogApi,
+    name: "Course Marketplace",
+    description: "Full Stack project developed as a challenge in a selection of projects (ReactJS, CRUD, Hooks Form, Router DOM, ContextAPI, Axios, PrismaORM, Express).",
+    href: "https://github.com/woliveira1728/courses-marketplace-web"
+  },
 
   {
     media: carCatalogApi,
@@ -117,6 +128,27 @@ export const certificates = [
     name: "Front End Programming",
     description: "Certificate of completion for 1000 class/hours in Front End ProgrammingFront End Programming covering HTML, CSS, React.js and Typescript.",
     href: "https://kenzie.com.br/certificados/84c145d8-400f-462a-8756-a9895f0fcd4b"
+  },
+
+  {
+    certificateImg: aluraJava,
+    name: "Oracle Next Education Back-end with Java",
+    description: "Oracle's Java Backend Program in partnership with Alura covering everything from beginner to Spring Boot Framework.",
+    href: "https://cursos.alura.com.br/program/certificate/7109aca2-1cab-4b96-bbf1-1fa5607f7295?lang"
+  },
+
+  {
+    certificateImg: santander,
+    name: "Sandander 2024 - Back-end with Java",
+    description: "DIO Bootcamp focused on Java with courses, project challenges, code challenges and exclusive mentoring.",
+    href: "https://www.dio.me/certificate/W2XT6P3M/share"
+  },
+
+  {
+    certificateImg: dioBlockchain,
+    name: "Blockchain Developer with Solidity",
+    description: "DIO Bootcamp focused on Angular with courses, project challenges, code challenges and exclusive mentoring.",
+    href: "https://www.dio.me/certificate/B7693272"
   },
 
   {
