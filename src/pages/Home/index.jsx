@@ -36,19 +36,7 @@ export const Home = ({ showModal, setShowModal }) => {
                 </div>
                 <div className={styles.aboutInfos}>
                     <p>
-                        My interest in technology began early, in mid-2005, when I spent years maintaining computers. However, it was during this time that I discovered my true passion: writing code to solve problems in systems. I then decided to make a career transition and dedicate myself fully to development.
-                    </p>
-                    <p>
-                        This decision led me to Kenzie Academy Brasil, where I had the opportunity to delve deeper into the world of fullstack web development. During my time there, I dove headfirst into languages ​​and technologies like HTML5, SASS, JavaScript, TypeScript, and ReactJS. Furthermore, I acquired softskills essential for success in the field, such as self-knowledge, autonomous learning, teamwork and crisis management.
-                    </p>
-                    <p>
-                        I am proud to have successfully completed the course and obtained my frontend training certificate. However, my learning journey is far from over. Currently, I'm focused on expanding my knowledge into backend development. I developed solid skills in creating APIs using Prisma, and I have intermediate knowledge in Java, which allows me to contribute to more complex and robust projects.
-                    </p>
-                    <p>
-                        Furthermore, I am diving into the world of blockchain, expanding my knowledge in technologies such as Solidity and Scrypt. I am excited about the opportunities this field offers and am committed to becoming proficient in this emerging area.
-                    </p>
-                    <p>
-                        I'm excited about the possibilities the future holds and committed to continuing to learn, grow, and become an even better developer.
+                        Meu interesse por tecnologia começou cedo, em meados de 2005, quando passei anos fazendo manutenção de computadores. No entanto, foi nessa época que descobri minha verdadeira paixão: escrever código para resolver problemas em sistemas. Decidi então fazer uma transição de carreira e me dedicar integralmente ao desenvolvimento. Essa decisão me levou à Kenzie Academy Brasil, onde tive a oportunidade de me aprofundar no mundo do desenvolvimento web fullstack. Durante meu tempo lá, mergulhei de cabeça em linguagens e tecnologias como HTML5, SASS, JavaScript, TypeScript e ReactJS. Além disso, adquiri softskills essenciais para o sucesso na área, como autoconhecimento, aprendizado autônomo, trabalho em equipe e gerenciamento de crises. Tenho orgulho de ter concluído o curso com sucesso e obtido meu certificado de treinamento frontend. No entanto, minha jornada de aprendizado está longe de terminar. Atualmente, estou focado em expandir meus conhecimentos em desenvolvimento backend. Desenvolvi sólidas habilidades na criação de APIs usando Prisma e possuo conhecimento intermediário em Java, o que me permite contribuir com projetos mais complexos e robustos. Além disso, estou mergulhando no mundo do blockchain, expandindo meu conhecimento em tecnologias como Solidity e Scrypt. Estou entusiasmado com as oportunidades que esta área oferece e comprometido em me tornar proficiente nesta área emergente. Estou entusiasmado com as possibilidades que o futuro reserva e comprometido em continuar aprendendo, crescendo e me tornando um desenvolvedor ainda melhor.
                     </p>
                 </div>
             </section>
