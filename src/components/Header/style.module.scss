@@ -1,25 +1,88 @@
 .headerContainer {
-    width: 100%;
-    padding-block: 1.25rem;
-    padding-inline: 1.25rem;
+    width: min(1180px, calc(100% - 2rem));
+    padding: 1rem 1.25rem;
     position: fixed;
     top: 0;
-    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(18, 18, 20, 0.99);
-    h2 {
-        font-size: clamp(1.125rem, 1.0000rem + 0.5556vw, 1.5rem);
-        font-weight: 800;
-        font-style: oblique;
+    background: rgba(18, 18, 24, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(122, 252, 200, 0.15);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-soft);
+    margin-top: 0.5rem;
+    color: var(--color-text);
+
+    :global([data-theme="light"]) & {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(37, 99, 235, 0.18);
+        box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
+        color: var(--color-text);
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .themeToggle {
+        color: var(--color-text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 50%;
+        border: 1px solid rgba(122, 252, 200, 0.35);
+        background: rgba(255, 255, 255, 0.04);
+        transition: all .25s ease;
+        font-size: 1.2rem;
+        &:hover {
+            color: #0b0c0f;
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+    }
+
+    .branding {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        h1 {
+            font-size: clamp(1.1rem, 1rem + 0.4vw, 1.4rem);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .brandDot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-accent-strong));
+        box-shadow: 0 0 16px rgba(122, 252, 200, 0.55);
     }
     
     .buttonMenu {
-        color: #FFFFFF;
+        color: var(--color-text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 50%;
+        border: 1px solid rgba(122, 252, 200, 0.35);
+        background: rgba(255, 255, 255, 0.04);
+        transition: all .25s ease;
         &:hover {
-            transition: ease .7s;
-            color: var(--color-line-green);
+            color: #0b0c0f;
+            background: var(--color-accent);
+            border-color: var(--color-accent);
         }
         @media (min-width: 769px) {
             display: none;
@@ -32,16 +95,23 @@
             align-items: center;
             justify-content: center;
 
-            font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
-            font-weight: 400;
-            gap: clamp(0.313rem, 0.0007rem + 1.3881vw, 1.25rem);
-            li > a:hover {
-                transition: ease .7s;
-                color: var(--color-line-green);
+            font-size: clamp(0.95rem, 0.88rem + 0.18vw, 1.05rem);
+            font-weight: 500;
+            gap: clamp(0.75rem, 0.3rem + 1.5vw, 1.75rem);
+            li > a {
+                color: var(--color-text);
+                padding: 0.4rem 0.2rem;
+                border-bottom: 2px solid transparent;
+                transition: color .25s ease, border-color .25s ease;
+            }
+            li > a:hover, li > a:focus-visible {
+                color: var(--color-accent);
+                border-color: var(--color-accent);
+                outline: none;
             }
         }
         @media (max-width: 768px) {
             display: none;
         }
     }
-};
+}

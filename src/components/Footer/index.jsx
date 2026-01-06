@@ -8,22 +8,22 @@ export const Footer = () => {
             <div className={styles.contactsContainer}>
                 <ul>
                     <li>
-                        <a href="https://wa.me/5592994763359" target="_blank">
+                        <a href="https://wa.me/5592994763359" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                             <FaWhatsapp />
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/woliveira1728" target="_blank">
+                        <a href="https://github.com/woliveira1728" target="_blank" rel="noreferrer" aria-label="GitHub">
                             <FaGithub />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/woliveira1728/" target="_blank">
+                        <a href="https://www.linkedin.com/in/woliveira1728/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <FaLinkedin />
                         </a>
                     </li>
                 </ul>
-                <span>woliveira1728@gmail.com</span>
+                <a href="mailto:woliveira1728@gmail.com" rel="noreferrer">woliveira1728@gmail.com</a>
             </div>
             <p>Developed by Wilson Oliveira</p>
         </footer>
