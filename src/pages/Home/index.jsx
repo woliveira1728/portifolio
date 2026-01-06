@@ -135,7 +135,7 @@ export const Home = ({ showModal, setShowModal }) => {
                         Essa decisão me levou à Kenzie Academy Brasil, onde tive a oportunidade de me aprofundar no mundo do desenvolvimento web fullstack. Durante meu tempo lá, mergulhei de cabeça em linguagens e tecnologias como HTML5, SASS, JavaScript, TypeScript e ReactJS. Além disso, adquiri softskills essenciais para o sucesso na área, como autoconhecimento, aprendizado autônomo, trabalho em equipe e gerenciamento de crises.
                     </p>
                     <p>
-                        Tenho orgulho de ter concluído o curso com sucesso e obtido meu certificado de treinamento frontend. No entanto, minha jornada de aprendizado está longe de terminar. Atualmente, estou focado em expandir meus conhecimentos em desenvolvimento backend. Desenvolvi sólidas habilidades na criação de APIs usando Prisma e possuo conhecimento intermediário em Java, o que me permite contribuir com projetos mais complexos e robustos.
+                        Concluí a formação em Desenvolvimento Web Full Stack pela Kenzie Academy Brasil e, hoje, estou no último ano do CST em Análise e Desenvolvimento de Sistemas na ULBRA.
                     </p>
                     <p>
                         Além disso, estou mergulhando no mundo do blockchain, expandindo meu conhecimento em tecnologias como Solidity e Scrypt. Estou entusiasmado com as oportunidades que esta área oferece e comprometido em me tornar proficiente nesta área emergente. Estou entusiasmado com as possibilidades que o futuro reserva e comprometido em continuar aprendendo, crescendo e me tornando um desenvolvedor ainda melhor.
