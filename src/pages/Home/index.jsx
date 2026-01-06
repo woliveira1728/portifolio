@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import perfil from "../../assets/will.jpeg";
 import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
-import { hardSkills, softSkills, projects, certificates } from "../../data/data";
+import { hardSkills, softSkills, projects, certificates, publications } from "../../data/data";
 import { MenuMobileModal } from "../../components/MenuMobileModal";
 
 export const Home = ({ showModal, setShowModal }) => {
@@ -286,6 +286,40 @@ export const Home = ({ showModal, setShowModal }) => {
                             </li>
                         )
                     })}
+                </ul>
+            </section>
+
+            <section id="publications" className={styles.publicationsSection}>
+                <div className={styles.sectionHeading}>
+                    <p className={styles.kicker}>Pesquisa e artigos</p>
+                    <h2>Publicações Científicas</h2>
+                    <p className={styles.sectionLead}>Artigos publicados com links para DOI, PDF e repositório.</p>
+                </div>
+                <ul className={styles.cardPublicationsContainer}>
+                    {publications.map((pub, index) => (
+                        <li key={index} className={styles.cardPublication}>
+                            <h3>{pub.title}</h3>
+                            {pub.subtitle ? <p className={styles.pubSubtitle}>{pub.subtitle}</p> : null}
+                            <p className={styles.pubAuthors}>{pub.authors}</p>
+                            <p className={styles.pubMeta}>
+                                {pub.venue}
+                                {pub.vol ? `, vol. ${pub.vol}` : ""}
+                                {pub.number ? `, nº ${pub.number}` : ""}
+                                {pub.pages ? `, p. ${pub.pages}` : ""}
+                                {pub.year ? `, ${pub.year}` : ""}
+                            </p>
+                            <div className={styles.pubLinks}>
+                                {pub.doiUrl ? <a href={pub.doiUrl} target="_blank" rel="noreferrer">Acessar DOI</a> : null}
+                                {pub.pdfUrl ? <a href={pub.pdfUrl} target="_blank" rel="noreferrer">PDF</a> : null}
+                                {pub.repoUrl ? <a href={pub.repoUrl} target="_blank" rel="noreferrer">Repositório</a> : null}
+                            </div>
+                            <details className={styles.pubCitation}>
+                                <summary>Como citar</summary>
+                                {pub.bibtex ? <pre><code>{pub.bibtex}</code></pre> : null}
+                                {pub.ieee ? <p>{pub.ieee}</p> : null}
+                            </details>
+                        </li>
+                    ))}
                 </ul>
             </section>
 
