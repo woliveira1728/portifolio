@@ -72,6 +72,7 @@ export const Home = ({ showModal, setShowModal }) => {
     ];
 
     const projectTech = {
+        "Lamina Pro": ["React 18", "TypeScript", "Vite", "React Hook Form", "React Router DOM", "TanStack Query", "shadcn/ui", "Radix UI", "Supabase", "Tailwind CSS", "Zod"],
         "Course Marketplace": ["React", "Node", "Prisma", "PostgreSQL", "Axios", "Auth"],
         "Car Catalog API": ["TypeScript", "Fastify/Express", "Prisma", "JWT", "Swagger", "Zod"],
         "Matriz Trading School": ["React", "Styled Components", "Team Work"],

@@ -12,6 +12,7 @@ import burguerKenzie from "../assets/videos/Burguer-Kenzie.mp4";
 import kenzieHub from "../assets/videos/Kenzie-Hub.mp4";
 import matrizTrading from "../assets/videos/matriz-trading-school.mp4";
 import frontEnd from "../assets/certificates/front-end.png";
+import backEnd from "../assets/certificates/back-end.png";
 import softSkills1 from "../assets/certificates/soft-skills-1.jpeg";
 import softSkills2 from "../assets/certificates/soft-skills-2.jpeg";
 import softSkills3 from "../assets/certificates/soft-skills-3.jpeg";
@@ -20,7 +21,7 @@ import carCatalogApi from "../assets/videos/car-catalog-api.mp4";
 import santander from "../assets/certificates/santander.png";
 import aluraJava from "../assets/certificates/alura-java.png";
 import dioBlockchain from "../assets/certificates/dio-blockchain.png";
-import courseMarketplace from "../assets/certificates/course-marketplace.png";
+import laminaPro from "../assets/videos/lamina-pro.mp4";
 
 
 export const hardSkills = [
@@ -57,9 +58,16 @@ export const softSkills = [
 export const projects = [
 
   {
+    media: laminaPro,
+    name: "Lamina Pro",
+    description: "Lâmina Pro is a smart queuing SaaS for barbershops, allowing customers to track service in real time while the barbershop maintains full flow control and reduces queues.",
+    href: "https://lamina-pro.lovable.app/"
+  },
+
+  {
     media: carCatalogApi,
     name: "Course Marketplace",
-    description: "Full Stack project developed as a challenge in a selection of projects (ReactJS, CRUD, Hooks Form, Router DOM, ContextAPI, Axios, PrismaORM, Express).",
+    description: "Full Stack project developed as a challenge in a selection of projects.",
     href: "https://github.com/woliveira1728/courses-marketplace-web"
   },
 
@@ -121,6 +129,13 @@ export const certificates = [
     name: "Full Stack Programming",
     description: "2000-hour Full Stack Development course that covers Front End and Back End technologies in addition to Soft Skills necessary for the job market.",
     href: "https://www.kenzie.com.br/certificados/23028057-d317-4722-9889-faffb2b10093"
+  },
+
+  {
+    certificateImg: backEnd,
+    name: "Back End Programming",
+    description: "Certificate of completion of 333 hours/class in the Back-end module Advanced addressing PrismaORM and Database.",
+    href: "https://www.kenzie.com.br/certificados/a2791208-0e4f-480d-9e7e-e842603395f5"
   },
 
   {
