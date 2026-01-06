@@ -202,3 +202,55 @@ export const certificates = [
   },
 
 ];
+
+export const publications = [
+  {
+    type: "conference",
+    title: "Tokenização de Árvores da Amazônia em Blockchain: Um Estudo de Caso",
+    subtitle: "Estudo de caso de tokenização para rastreio e preservação",
+    authors: "Robson R. Andrade; Masaki Nozawa; Adriana D. Silva; Samuel B. Ferreira; Danielle S. Soares; Keitia A. Cruz; Pedro H. Silveira; Jose S. Silva; Lucas P. Pereira; Anderson B. Ortega; Douglas R. Andrade; Wilson D. Oliveira; Carlos A. M. Cruz",
+    venue: "Anais da II Conferência de Tecnologia do ICET (CONNECTech 2025)",
+    pages: "125",
+    year: 2025,
+    doi: "10.5753/connect.2025.12193",
+    doiUrl: "http://dx.doi.org/10.5753/connect.2025.12193",
+    pdfUrl: "https://github.com/woliveira1728/woliveira1728/blob/main/papers/artigo-tokenizacao-amazonia.pdf",
+    bibtex: `@inproceedings{oliveira2025tokenizacao,
+  author    = {Robson R. Andrade and Masaki Nozawa and Adriana D. Silva and Samuel B. Ferreira and Danielle S. Soares and Keitia A. Cruz and Pedro H. Silveira and Jose S. Silva and Lucas P. Pereira and Anderson B. Ortega and Douglas R. Andrade and Wilson D. Oliveira and Carlos A. M. Cruz},
+  title     = {"Tokenização de Árvores da Amazônia em Blockchain: Um Estudo de Caso"},
+  booktitle = {Anais da II Conferência de Tecnologia do ICET (CONNECTech 2025)},
+  year      = {2025},
+  pages     = {125},
+  doi       = {10.5753/connect.2025.12193},
+  url       = {https://doi.org/10.5753/connect.2025.12193}
+}`,
+    ieee: "R. R. Andrade, M. Nozawa, A. D. Silva, S. B. Ferreira, D. S. Soares, K. A. Cruz, P. H. Silveira, J. S. Silva, L. P. Pereira, A. B. Ortega, D. R. Andrade, W. D. Oliveira, and C. A. M. Cruz, \"Tokenização de Árvores da Amazônia em Blockchain: Um Estudo de Caso,\" in Anais da II Conferência de Tecnologia do ICET (CONNECTech 2025), p. 125, 2025. [Online]. Available: https://doi.org/10.5753/connect.2025.12193"
+  },
+  {
+    type: "journal",
+    title: "A Data Rate Monitoring Approach for Cyberattack Detection in Digital Twin Communication",
+    subtitle: "Abordagem baseada em taxa de dados para detecção de ciberataques",
+    authors: "Cláudio Rodrigues; Waldir S. S. Júnior; Wilson D. Oliveira; Isomar Lima",
+    venue: "Sensors",
+    vol: "25",
+    number: "24",
+    pages: "7476",
+    year: 2025,
+    doi: "10.3390/s25247476",
+    doiUrl: "https://doi.org/10.3390/s25247476",
+    pdfUrl: "https://www.mdpi.com/1424-8220/25/24/7476/pdf",
+    repoUrl: "https://github.com/woliveira1728/digital-twin",
+    bibtex: `@article{digitwinsym2024,
+  title     = {A Data Rate Monitoring Approach for Cyberattack Detection in Digital Twin Communication},
+  author    = {Rodrigues, Cl{\'a}udio e J{\'u}nior, Waldir S. S. e Oliveira, Wilson e Lima, Isomar},
+  journal   = {Sensors},
+  volume    = {25},
+  number    = {24},
+  pages     = {7476},
+  year      = {2025},
+  doi       = {10.3390/s25247476},
+  note      = {Code available at: https://github.com/woliveira1728/digital-twin}
+}`,
+    ieee: "C. Rodrigues, W. S. S. Júnior, W. Oliveira, and I. Lima, \"A Data Rate Monitoring Approach for Cyberattack Detection in Digital Twin Communication,\" Sensors, vol. 25, no. 24, p. 7476, 2025. [Online]. Available: https://doi.org/10.3390/s25247476"
+  }
+];
