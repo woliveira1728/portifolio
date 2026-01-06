@@ -1,36 +1,88 @@
 @import url("./reset.scss");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
+    --font--family-primary: "Space Grotesk", "Segoe UI", sans-serif;
 
-    --font--family-primary: "Roboto", sans-serif;
+    --color-bg: #0b1220;
+    --color-surface: #0f172a;
+    --color-surface-alt: #111c33;
+    --color-text: #f5f7fb;
+    --color-muted: #c5ccdf;
+    --color-accent: #6cf0ff;
+    --color-accent-strong: #7afcc8;
+    --color-line-green: #5cf1c5;
 
-    --color-line-green: #21e051;
-
-    --size-title-1: 2.375rem;
-    --size-title-2: 1rem;
-    --size-headline: .75rem;
-    --size-headline-bold: .75rem;
-    --size-paragraph: .875rem;
+    --size-title-1: 2.5rem;
+    --size-title-2: 1.125rem;
+    --size-headline: .875rem;
+    --size-headline-bold: .95rem;
+    --size-paragraph: 1rem;
 
     --weight-semibold: 600;
     --weight-bold: 700;
 
-    --radius-default: .5rem;
-};
+    --radius-default: .75rem;
+    --shadow-soft: 0 16px 60px rgba(0, 0, 0, 0.35);
+    --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.28);
+}
+
+[data-theme="light"] {
+    --color-bg: #eef2f7;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f5f7fb;
+    --color-text: #0f172a;
+    --color-muted: #4b5563;
+    --color-accent: #2563eb;
+    --color-accent-strong: #0ea5e9;
+    --color-line-green: #10b981;
+    --shadow-soft: 0 12px 36px rgba(15, 23, 42, 0.12);
+    --shadow-card: 0 10px 26px rgba(15, 23, 42, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    width: 100vw;
-    
-    background: #121214;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at 18% 22%, rgba(108, 240, 255, 0.10), transparent 26%),
+                radial-gradient(circle at 82% 8%, rgba(122, 252, 200, 0.12), transparent 32%),
+                radial-gradient(circle at 50% 90%, rgba(108, 240, 255, 0.05), transparent 35%),
+                var(--color-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
     font-family: var(--font--family-primary);
     position: relative;
     overflow-x: hidden;
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 0 1rem 2rem;
+    transition: background 0.4s ease, color 0.3s ease;
+}
 
-    color: #FFFFFF;
-};
+.app-shell {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0.5rem;
+    background: var(--color-accent);
+    color: #0b0c0f;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
+    transition: left 0.2s ease, transform 0.2s ease;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    transform: translateY(4px);
+    outline: 2px solid #0b0c0f;
+}
